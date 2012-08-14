@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace DAL
 {
-    class Record
+    public class Record
     {
         public int Id { get; set; }
         public int UserId { get; set; }

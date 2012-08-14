@@ -3,17 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+using System.ComponentModel.DataAnnotations;
 
-namespace ConsoleApplication1
+namespace DAL
 {
 
-    enum EventGenre
+    public enum EventGenre
     {
         Meal,
         Movie,
         Other
     }
-    enum EventStatus
+    public enum EventStatus
     {
         Proposed,
         Approved,
@@ -22,15 +25,18 @@ namespace ConsoleApplication1
         Completed
     }
 
-    class Event
+    public class Event
     {
         public int Id { get; set; }
+        [Required]
         public string Name { get; set; }
         public string Description { get; set; }
         public double Duration { get; set; } // in hours
         public string TentativeDate { get; set; }
         public string Venue { get; set; }
         public List<User> Participants { get; set; }
+
+        [JsonConverter(typeof(StringEnumConverter))]
         public EventGenre Genre { get; set; }
         public int NumberOfYes { get; set; }
         public int NumberOfNo { get; set; }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace DAL
 {
-    class User
+    public class User
     {
         public int Id { get; set; }
         public string Name { get; set; }

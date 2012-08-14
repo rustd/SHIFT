@@ -5,10 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication1
+namespace DAL
 {
-    class EventContext : DbContext
+    public class EventContext : DbContext
     {
+        public EventContext():base("DefaultConnection3"){}
+
         public DbSet<Event> Events { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Record> Records { get; set; }
