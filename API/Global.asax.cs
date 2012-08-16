@@ -14,11 +14,9 @@ namespace API
 
         protected void Application_Start(object sender, EventArgs e)
         {
-            RouteTable.Routes.MapHttpRoute(
-                name: "API Default",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
-);
+            WebApiConfig.Register(GlobalConfiguration.Configuration);
+            System.Data.Entity.Database.SetInitializer(new DAL.EventContextInitializer());
+
         }
 
         protected void Session_Start(object sender, EventArgs e)

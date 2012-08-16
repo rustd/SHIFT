@@ -9,10 +9,10 @@ namespace DAL
 {
     public class EventContext : DbContext
     {
-        public EventContext():base("DefaultConnection3"){}
+        public EventContext():base(nameOrConnectionString: "DefaultConnection3"){}
 
         public DbSet<Event> Events { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<EventRecord> Records { get; set; }
+        public DbSet<EventRecord> EventRecords { get; set; }
     }
 }

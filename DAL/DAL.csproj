@@ -53,6 +53,7 @@
     <Compile Include="EventContext.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="EventContextInitializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EventRecord.cs" />
     <Compile Include="User.cs" />

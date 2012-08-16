@@ -27,6 +27,8 @@ namespace DAL
 
     public class Event
     {
+
+        [ScaffoldColumn(false)]
         public int Id { get; set; }
         public int EventRecordId { get; set; }
         [Required]
