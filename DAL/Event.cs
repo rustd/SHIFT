@@ -42,6 +42,7 @@ namespace DAL
         public int NumberOfYes { get; set; }
         public int NumberOfNo { get; set; }
         public int Cost { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
         public EventStatus Status { get; set; }
     }
 }

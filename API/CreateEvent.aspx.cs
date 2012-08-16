@@ -25,7 +25,7 @@ namespace API
                 // Save changes here
                 HttpClient client = new HttpClient();
                 client.BaseAddress = new Uri("http://localhost:44611");
-                client.PostAsJsonAsync("api/Event", item);
+                client.PostAsJsonAsync("api/Events", item);
             }
         }
     }
