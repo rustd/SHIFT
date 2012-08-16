@@ -50,9 +50,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Event.cs" />
-    <Compile Include="EventContext.cs" />
+    <Compile Include="EventContext.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Record.cs" />
+    <Compile Include="EventRecord.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>

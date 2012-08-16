@@ -13,6 +13,6 @@ namespace DAL
 
         public DbSet<Event> Events { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<Record> Records { get; set; }
+        public DbSet<EventRecord> Records { get; set; }
     }
 }

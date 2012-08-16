@@ -28,6 +28,7 @@ namespace DAL
     public class Event
     {
         public int Id { get; set; }
+        public int EventRecordId { get; set; }
         [Required]
         public string Name { get; set; }
         public string Description { get; set; }

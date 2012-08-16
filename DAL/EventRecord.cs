@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    public class Record
+    public class EventRecord
     {
-        public int Id { get; set; }
+        public int EventRecordId { get; set; }
         public int UserId { get; set; }
-        public int EventId { get; set; }
         public bool? Vote { get; set; }
+
+        // Navigation property
+        public ICollection<Event> Events { get; set; }
     }
 }
