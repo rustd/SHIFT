@@ -6,7 +6,6 @@
 <head runat="server">
     <title></title>
     <script src="Scripts/jquery-1.7.1.js"></script>
-    <script src="Scripts/jQuery.tmpl.js"></script>
     <script>
         $(function () {
             $.getJSON(
